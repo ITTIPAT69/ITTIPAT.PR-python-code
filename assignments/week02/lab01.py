@@ -5,12 +5,12 @@ bmi = weight / hight ** 2
 if bmi < 18.5:
     print("Underweight")
 
-else bmi 18.5 and bmi <=24.9: 
+if bmi >= 18.5 and bmi <=24.9: 
     print("Normal weight")
 
-else bmi 25.0 and bmi <=29.9:
+if bmi >= 25.0 and bmi <=29.9:
     print("Overweignt")
 
-else bmi >= 30.0:
+if bmi >= 30.0:
     print("Obese")
 
