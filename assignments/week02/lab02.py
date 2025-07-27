@@ -18,5 +18,5 @@ if direction == "1":
     print("Reault: ",result, "USD")
 
 if direction == "2":
-    result = amount  35.5
+    result = amount * 35.5
     print("Reault: ",result, "THB")
