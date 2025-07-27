@@ -1,0 +1,43 @@
+# Student: [Ittipat primprai]
+# Date: 2025-07-27
+
+#รับข้อมูล
+income = float(input("Monthly income: "))
+rent = float(input("Rent cost: "))
+food = int(input("Food budget: "))
+transport = float(input("Transportation cost: "))
+entertain = int(input("Entertainment budget: "))
+emergency_percent = float(input("Emergency fund percentage (%): "))
+invest_percent = float(input("Investment percentage (%): "))
+
+#เช่า + เดินทาง
+fix = rent + transport
+#กิน + พักผ่อน
+var = food + entertain
+#รวมค่าใช้จ่ายทั้งหมด
+total = fix + var
+#รายได้ที่เหลือหลังจากหักค่าใช้จ่าย
+remain = income - total
+#เงินฉุกเฉิน
+emergency = income * (emergency_percent / 100)
+#เงินลงทุน
+invest = income * (invest_percent / 100)
+#เหลือจากออม
+save = remain - emergency - invest
+#ค่าใช้จ่ายต่อรายได้
+ratio = (total / income) * 100
+
+print("\n MONTHLY BUDGET REPORT ")
+print(f"Income: {income:.2f}")
+print(f"Fixed Expenses: {fix:.2f}")
+print(f"Variable Expenses: {var:.2f}")
+print(f"Total Expenses: {total:.2f}")
+print(f"Remaining: {remain:.2f}")
+
+print("\n SAVINGS BREAKDOWN ")
+print(f"Emergency Fund ({emergency_percent:.0f}%): {emergency:.2f}")
+print(f"Investment ({invest_percent:.0f}%): {invest:.2f}")
+print(f"Available for Savings: {save:.2f}")
+
+print("\n ANALYSIS ")
+print(f"Expense Ratio: {ratio:.2f}%")
