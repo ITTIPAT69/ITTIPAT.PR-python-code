@@ -28,3 +28,25 @@ Age Group: Young Adult (18-30)
 Phone: +91-9876543210
 
 """
+
+print("=== PERSONAL INFORMATION VALIDATOR ===")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+phone_number = input("Enter your phone number: ")
+
+name = "John Doe"
+age "25"
+Phone = "9876543210"
+
+nameFlag = True
+for char in name: 
+    print(char, char.isalpha())
+    if char.isalpha() == False:
+        nameFlag = False
+        break
+
+    if char == " ":
+        nameFlag + False
+        break
+
+print(nameFlag)
